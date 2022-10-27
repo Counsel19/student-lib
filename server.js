@@ -4,9 +4,9 @@ const app = express();
 import dotenv from "dotenv";
 dotenv.config();
 
-// import { dirname } from "path";
-// import { fileURLToPath } from "url";
-// import path from "path";
+import { dirname } from "path";
+import { fileURLToPath } from "url";
+import path from "path";
 
 import "express-async-errors";
 import morgan from "morgan";
@@ -29,8 +29,8 @@ if (process.env.NODE_ENV !== "production") {
   app.use(morgan("dev"));
 }
 
-// const __dirname = dirname(fileURLToPath(import.meta.url));
-// app.use(express.static(path.resolve(__dirname, "./client/build")))
+const __dirname = dirname(fileURLToPath(import.meta.url));
+app.use(express.static(path.resolve(__dirname, "./client/build")))
 
 app.use(express.json());
 
