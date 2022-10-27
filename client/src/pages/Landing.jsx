@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom";
 import dataImg from "../images/team.svg";
+import Logo from "../images/FUTO_logo_main.png";
 
 export default function Landing() {
   return (
     <div className="bg-white px-20 py-5">
-      <div className="text-center text-indigo-600 font-bold text-xl">Federal Univerity Of Technology</div>
+      <div className="text-center flex items-center justify-center gap-4 text-indigo-600 font-bold text-xl">
+        <img src={Logo} alt="Logo" className="h-12 w-12"/> Federal Univerity Of Technology
+      </div>
       <div className="flex items-center justify-between">
         <div className="pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32">
           <main className=" mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
@@ -17,10 +20,10 @@ export default function Landing() {
               </h1>
               <p className="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
                 An application for managing students data. Course Advisors can
-                register for his department and upload students data accordingly.
-                the Admin can search for studnets using  their firstname, last name
-                or registration number. He can filter results by department and
-                entry year of all students submitted
+                register for his department and upload students data
+                accordingly. the Admin can search for studnets using their
+                firstname, last name or registration number. He can filter
+                results by department and entry year of all students submitted
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">

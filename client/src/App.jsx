@@ -29,7 +29,7 @@ function App() {
           }
         >
           <Route index element={<AdminHome />} />
-          <Route path="students" element={<List studentRoute={true} />} />
+          <Route path="students" element={<List studentsRoute={true} />} />
           <Route
             path="departments"
             element={<List departmentsRoute={true} />}
